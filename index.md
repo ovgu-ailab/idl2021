@@ -57,11 +57,11 @@ If you afterwards have got further questions about the course, please contact [S
 
 <img src="figures/prerequisites.png" width="700">
 
-([Link to LSF system](https://lsf.ovgu.de) | [Link to Moodle](https://elearning.ovgu.de/course/view.php?id=8319))  
+([Link to LSF system](https://lsf.ovgu.de) | [Link to Moodle](https://elearning.ovgu.de/course/view.php?id=FIXME))  
 Your submitted information will be solely used for application process. It will be treated confidentially and deleted after the candidates have been selected.  
 
 
-The deadline for applications is **October 18 (23:59), 2020**. Applications arriving later will only be considered if there is still course capacity.
+The deadline for applications is **TBA**. Applications arriving later will only be considered if there is still course capacity.
 
 The aim of this process is to select students that are likely to successfully complete the course and not drop out half way through.
 
@@ -95,7 +95,7 @@ There are two kinds of exercises - one for theory and one for praxis.
 You need to take both for the course.
 There will be two groups for each exercise type
 To participate in the exercises, you must register in the [LSF system](https://lsf.ovgu.de).
-Registration is possible until October 18 (23:59), 2020.
+Registration is possible until TBA.
 When you apply for the exercise groups, you can specify priorities for the different dates.
 Please specify several dates with different priorities as we cannot guarantee that everybody will be assigned to their first choice!
 
