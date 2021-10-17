@@ -6,7 +6,7 @@ id: ass1
 
 
 # Assignment 1: Let the Tensors Flow
-**Deadline: November 2nd, 11am**
+**Deadline: October 25th, 9am**
 
 In this assignment, you will implement and train your first deep model on a
 well-known image classification task. You will also familiarize yourself with
