@@ -5,3 +5,5 @@ navbar:
         url: index.html
       - title: Schedule
         url: schedule.html
+      - title: Literature
+        url: literature.html
