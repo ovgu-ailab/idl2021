@@ -31,7 +31,7 @@ lectures:
       - "15min topic map (together), can optionally moved to next class"
     note: "TODO: more links to online lectures/talks on basics"
 
-  - date: 2020-10-21
+  - date: 2021-10-21
     type:
     content:
     - title: MLPs, Gradient Descent & Backpropagation
@@ -63,7 +63,16 @@ lectures:
 
     note: Most of this lecture should be known from basic machine learning courses.
 
-
+- date: 2021-11-21
+    type:
+    content:
+    - title: CNNs
+      slides:
+    reading:
+    - title: "Deep Learning Book - Chapter 9: Convolutional Networks, Sections 9.1 to 9.5"
+      url: http://www.deeplearningbook.org/contents/convnets.html
+    type:
+    assignment:
 
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
