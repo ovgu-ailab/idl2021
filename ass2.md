@@ -6,7 +6,7 @@ id: ass2
 
 
 # Assignment 2: Let the Tensors Board? & also `tf.data`
-**Deadline: November 9th, 11am**
+**Deadline: November 1st, 9am**
 
 Visualizing the learning progress as well as the behavior of a deep model is
 extremely useful (if not necessary) for troubleshooting in case of unexpected
