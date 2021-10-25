@@ -112,7 +112,8 @@ wrong.
 (i.e. extremely small or large), something is probably wrong. 
 An overall impression of a gradient's size
 can be gained via `tf.norm(g)`; feel free to add scalar summaries of these
-values to TensorBoard. Something about names...
+values to TensorBoard. You can pass a `name` to the variables when defining
+  them and use this to give descriptive names to your summaries.
 - Some things to watch out for in the code: Are the activation functions sensible?
 What about the weight initializations? Do the inputs/data look "normal"?
   
