@@ -76,6 +76,21 @@ lectures:
       - label: "tf.data & Tensorboard"
         link: ass2.html
 
+  - date: 2021-11-04
+    type:
+    content:
+    - title: CNNs (cont.)
+      slides:
+    reading:
+    - title: "Deep Learning Book - Chapter 9: Convolutional Networks, remaining sections"
+      url: http://www.deeplearningbook.org/contents/convnets.html
+    - title: Reading Assignment
+      url: reading3.html
+    type:
+    xassignment:
+        - label: CNNs
+          link: ass3.html
+
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
 # - https://blog.ml.cmu.edu/category/educational/
