@@ -91,6 +91,18 @@ lectures:
         - label: "CNNs & Basic Keras"
           link: ass3.html
 
+  - date: 2021-11-11
+    type:
+    content:
+    - title: RNNs
+      slides:
+    reading:
+    - title: "Deep Learning Book - Chapter 10: Sequence Modeling: Recurrent and Recursive Nets, Sections 10.1 to 10.5"
+      url: http://www.deeplearningbook.org/contents/rnn.html
+    xassignment:
+    - label: DenseNet
+      link: ass4.html
+
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
 # - https://blog.ml.cmu.edu/category/educational/
