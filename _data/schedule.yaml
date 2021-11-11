@@ -103,6 +103,20 @@ lectures:
     - label: DenseNet
       link: ass4.html
 
+  - date: 2021-11-18
+    type:
+    content:
+    - title: RNNs (cont.)
+      slides:
+    reading:
+    - title: "Deep Learning Book - Chapter 10: Sequence Modeling: Recurrent and Recursive Nets, Sections 10.6, 10.7 and 10.10 to 10.12"
+      url: http://www.deeplearningbook.org/contents/rnn.html
+    - title: "Sequence Modeling With CTC"
+      url: https://distill.pub/2017/ctc/
+    xassignment:
+    - label: RNNs
+      link: ass5.html
+
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
 # - https://blog.ml.cmu.edu/category/educational/
