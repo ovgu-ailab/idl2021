@@ -19,7 +19,7 @@ In part 1, we are mainly concerned with implementing RNNs at the low level so th
 we understand how they work in detail.
 The models themselves will be rather rudimentary.
 We will also see the kinds of problems that arise when working with sequence data,
-specifcially text.
+specifically text.
 Next week, we will build better models and deal with some of these issues.
 
 
@@ -30,18 +30,18 @@ and consists of 50,000 movie reviews with binary labels (positive or negative),
 divided into training and testing sets of 25,000 sequences each.
 
 ### A first look
-The data can be loaded the same way as MNIST or CIFAR  -- 
+The data can be loaded the same way as MNIST or CIFAR  --
 `tf.keras.datasets.imdb.load_data()`.
 If you print the sequences, however, you will see that they are numbers, not text.
-Recall that deep learning is essentially 
-[a pile of linear algebra](https://xkcd.com/1838/). 
+Recall that deep learning is essentially
+[a pile of linear algebra](https://xkcd.com/1838/).
 As such, neural networks cannot take text as input, which is why it needs to be
-converted to numbers. 
+converted to numbers.
 This has already been done for us -- each word has been  replaced by a number,
 and thus a movie review is a sequence of numbers (punctuation has been removed).
 
 If you want to restore the text, `tf.keras.datasets.imdb.get_word_index()` has
-the mapping -- see the notebook for how you can use this, as well as some 
+the mapping -- see the notebook for how you can use this, as well as some
 additional steps you need to actually get correct outputs.
 
 ### Representing words
@@ -84,18 +84,18 @@ Once we define the model, we will run into two issues with our data:
    massively hampering gradient flow. It is highly recommended that you limit the
    sequence length (200 could be a good start). You have two choices:
    1. _Truncate_ sequences by cutting off all words beyond a limit. Both `load_data`
-    and `pad_sequences` have arguments to do this. We recommend the latter as you 
+    and `pad_sequences` have arguments to do this. We recommend the latter as you
       can choose between "pre" or "post" truncation.
    2. _Remove_ all sequences that are longer than a limit from the dataset. Radical!
 2. Our vocabulary is large, more than 85,000 words. Many of these are rare words
 which only appear a few times. There are two reasons why this is problematic:
    1. The one-hot vectors are huge, slowing down the program and eating memory.
    2. It's difficult for the network to learn useful features for the rare words.
-    
+
    `load_data` has an argument to keep only the `n`
    most common words and replace less frequent ones by a special "unknown word"
    token (index 2 by default). As a start, try keeping only the 20,000 most common words or so.
-   
+
 **Food for thought #2:** Between truncating long sequences and removing them, which
 option do you think is better? Why?
 
@@ -130,7 +130,7 @@ and computes an output. The loss is computed based on the difference between
 - The differences come in how the RNN computes its output. The basic recurrency
 can be seen in equation 10.5 of the deep learning book, with more details in
   equations 10.8-10.11. The important idea is that, at each time step, the RNN
-  essentially works like an MLP with a single hidden layer, but two inputs 
+  essentially works like an MLP with a single hidden layer, but two inputs
   (last state and current input). In total, you need to "just":
     - Loop over the input, at each time step taking the respective slice. Your
     per-step input should be `batch x features` just like with an MLP!
@@ -146,12 +146,12 @@ On the other hand, we have one output _per time step_. The usual approach is to
     cross-entropy as before (i.e. softmax activation). Here, whichever output is
      higher "wins"
   2. You can have _a single_ output unit and use binary cross-entropy (i.e.
-     sigmoid activation). Here, the output is usually tresholded at 0.5.
-     
+     sigmoid activation). Here, the output is usually thresholded at 0.5.
+
 **Food for thought #4:** How can it be that we can _choose_ how many outputs we
 have, i.e. how can both be correct? Are there differences between both choices
 as well as (dis)advantages relative to each other?
-     
+
 ### Open Problems
 #### Initial state
 To compute the state at the first time step, you would need a "previous state",
@@ -159,7 +159,7 @@ but there is none. To fix this, you can define an "initial state" for the networ
 A common solution is to simply use a tensor filled with zeros. You could also add
 a trainable variable and learn an initial state instead!
 
-**Food for thought #5:** All sequences start with the same special "beginning of 
+**Food for thought #5:** All sequences start with the same special "beginning of
 sequence" token (coded by index 1). Given this fact, is there a point in learning
 an initial state? Why (not)?
 
@@ -179,8 +179,8 @@ previous state in case the current time step is padding. Note that, within a bat
 some sequences might be padded for a given time step while others are not.
 
 #### Slow learning
-Be aware that it might take several thousand steps for the loss to start moving 
-at all, so don't stop training too early if nothing is happening. 
+Be aware that it might take several thousand steps for the loss to start moving
+at all, so don't stop training too early if nothing is happening.
 Experiment with weight initializations and learning rates. For fast learning,
 the goal is usually to set them as large as possible without the model "exploding".
 
