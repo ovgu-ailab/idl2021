@@ -22,6 +22,8 @@ We will also see the kinds of problems that arise when working with sequence dat
 specifically text.
 Next week, we will build better models and deal with some of these issues.
 
+**The notebook associated with the practical exercise will soon be found here.**
+
 
 ## The Data
 
@@ -204,6 +206,8 @@ output sequence instead of just the final step?
 - A low-level RNN implementation for sentiment classification. If you can get it
 to move away from 50% accuracy on the training set, that's a success. Be wary of
   overfitting, however, as this doesn't mean that the model is generalizing! If
-  the test (or validation) loss isn't moving, try using a smaller network.
+  the test (or validation) loss isn't moving, try using a smaller network. Also
+  note that you may sometimes get a higher test accuracy, while the test loss
+  is _also_ increasing (how can this be?)!
 - Consider the various questions posed throughout the assignment and try to answer
 them! You can use text cells to leave short answers in your notebook.
