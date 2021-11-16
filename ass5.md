@@ -22,7 +22,8 @@ We will also see the kinds of problems that arise when working with sequence dat
 specifically text.
 Next week, we will build better models and deal with some of these issues.
 
-**The notebook associated with the practical exercise will soon be found here.**
+**The notebook associated with the practical exercise can be found 
+[here](https://ovgu-ailab.github.io/idl2021/assignments/5/rnns_part1.ipynb).**
 
 
 ## The Data
