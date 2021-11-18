@@ -117,6 +117,18 @@ lectures:
     - label: Sentiment Classifcation Part 1
       link: ass5.html
 
+  - date: 2021-11-25
+    type:
+    content:
+    - title: Attention and Memory
+      slides:
+    reading:
+    - title: Reading Assignment
+      url: reading6.html
+    xassignment:
+    - label: More RNNs
+      link: ass6.html
+
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
 # - https://blog.ml.cmu.edu/category/educational/
