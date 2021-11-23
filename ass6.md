@@ -16,6 +16,9 @@ that were left. In particular:
 - using Keras to simplify our code,
 - using more advanced architectures such as LSTMs, stacked RNNs or 
   bidirectional RNNs.
+  
+**The notebook associated with the practical exercise can be found 
+[here](https://ovgu-ailab.github.io/idl2021/assignments/6/rnns_part2.ipynb).**
 
 
 ## Improving training efficiency
