@@ -12,10 +12,6 @@ of your choice.
 We will follow the corresponding 
 [TF Tutorial on NMT](https://www.tensorflow.org/tutorials/text/nmt_with_attention).
 
-**NOTE** this tutorial was significantly changed from last year. We are still in the
-process of checking whether there are any issues. This assignment text may still be
-updated later!
-
 Please do **not** just use the exemplary English-Spanish example to reduce temptation
  of simply copying the tutorial.  
 You can find data sets [here](http://www.manythings.org/anki/). We recommend
@@ -33,7 +29,7 @@ data on your local machine and upload the .txt file to your drive, and then moun
 it and load the file as you've done before.
 2. The `load_data` function might crash. It expects each line to result in
 *pairs of sentences*, but there seems to be a third element which talks about
-attribution of the example. If this happens, you can use `l.split('\t')[:-1]` to
+attribution of the example. If this happens, you can use `line.split('\t')[:-1]` to
 exclude this in the function.
 
 Recommendation: Start with a small number of training examples. Use one of the 
@@ -48,6 +44,15 @@ Tasks:
 - Implement other attention mechanisms and train models with them:
   - dot product attention <img src="https://latex.codecogs.com/svg.latex?h_t^T%20\cdot%20\overline{h}_s" />
   - Luong's multiplicative attention <img src="https://latex.codecogs.com/svg.latex?h_t^T%20W%20\overline{h}_s" />
+- Optional: The tutorial implements the training step with an explicit loop
+  over the decoder time steps. However, the decoder model/layer is written in
+  such a way that it can actually process the whole sequence in one go, which
+  would be much faster because optimized RNN implementations can be used 
+  (we observed about a 5x speedup).
+  Can you re-write the training step in this way? Be careful that the training
+  performance doesn't degrade (the tutorial includes code to overfit on one 
+  batch) as there may be problems with your code even if it runs without errors!
+    
 
 Hint: Take care to save your models or their weights (in the drive) 
 so you do not lose your
@@ -76,11 +81,13 @@ or are some words split up?
  (for the architecture used in the tutorial)?
 - Is the decoder attending to all previous positions, including the previous
  decoder predictions?
-- Does the Encoder output change in different decoding steps?
+- Does the encoder output change in different decoding steps?
 - Does the context vector change in different decoding steps?
 - The decoder uses teacher forcing. Does this mean the time steps can be computed
  in parallel?
 - Why is a mask applied to the loss function?
+- When translating the same sentence multiple times, do you get the same result?
+Why (not)? If not, what changes need to be made to get the same result each time?
 
 Hand in all of your code, i.e. the working tutorial code along with all changes/additions you made. Include outputs which document some of your experiments. Also
 remember to answer the questions above! Of course you can also write about other
