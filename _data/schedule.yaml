@@ -153,8 +153,8 @@ lectures:
     - title: Reading Assignment
       url: reading8.html
     type:
-    xassignment:
-    - label: Autoencoders
+    assignment:
+    - label: Word2Vec
       link: ass8.html
 
   - date: 2021-12-16
