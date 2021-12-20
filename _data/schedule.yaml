@@ -190,7 +190,7 @@ lectures:
     - title: "Andrew Ng: Machine Learning Yearning (scroll down to "Resources" section)"
       url: http://mlyearning.org/
     type:
-    xassignment:
+    assignment:
     - label: Adversarial Examples
       link: ass10.html
 

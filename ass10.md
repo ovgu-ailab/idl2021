@@ -5,7 +5,7 @@ id: ass10
 ---
 
 
-# Assignment 9: Adversarial Examples & Training
+# Assignment 10: Adversarial Examples & Training
 **Deadline: January 10th, 9am**
 
 In this assignment, we will explore the phenomenon of adversarial examples and
