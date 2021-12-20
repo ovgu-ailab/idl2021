@@ -176,19 +176,6 @@ lectures:
     # - optional: True,
     #   title: "optional reading for an introduction to predictive coding as self-supervised learning approach: Relaxing the Constraints on Predictive Coding Models"
     #   url: https://arxiv.org/abs/2010.01047
-
-  - date: 2022-01-13
-    type:
-    content:
-      - title: TBD
-        slides:
-    reading:
-    assignment:
-      - label: Adversarial Examples
-        link: ass10.html
-    # - optional: True,
-    #   title: "optional reading for an introduction to predictive coding as self-supervised learning approach: Relaxing the Constraints on Predictive Coding Models"
-    #   url: https://arxiv.org/abs/2010.01047
     
   - date: 2022-01-13
     type:
@@ -205,7 +192,7 @@ lectures:
     type:
     xassignment:
     - label: Adversarial Examples
-      link: ass9.html
+      link: ass10.html
 
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
