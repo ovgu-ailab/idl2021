@@ -187,9 +187,8 @@ lectures:
       url: http://www.deeplearningbook.org/contents/guidelines.html
     - title: "Practical Methodology Talk by Ian Goodfellow"
       url: https://www.youtube.com/watch?v=NKiwFF_zBu4
-    - title: "Andrew Ng: Machine Learning Yearning (scroll down to "Resources" section)"
+    - title: "Andrew Ng: Machine Learning Yearning (scroll down to Resources section)"
       url: http://mlyearning.org/
-    type:
     assignment:
     - label: Adversarial Examples
       link: ass10.html
