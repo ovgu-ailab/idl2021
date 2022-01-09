@@ -193,6 +193,18 @@ lectures:
     - label: Adversarial Examples
       link: ass10.html
 
+  - date: 2022-01-20
+    type:
+    content:
+    - title: TBD
+      slides:
+    reading:
+    - xtitle: "TBD"
+      xurl: TBD
+    assignment:
+    - label: Practical Methodology
+      link: ass11.html
+
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
 # - https://blog.ml.cmu.edu/category/educational/
