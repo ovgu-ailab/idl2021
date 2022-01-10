@@ -32,7 +32,9 @@ out for include:
 
 If your unfamiliar with `.npz` files, see 
 [here](https://docs.scipy.org/doc/numpy/reference/generated/numpy.savez.html)
-for reference.
+for reference. Basically, you can use `np.load` to load the file, then use 
+`list(<objectname>.keys())` to check the available fields, and get them out of the
+object the same way as with a dictionary.
 
 Note:
 - Make sure you train your models long enough, else the problems in the dataset
@@ -52,7 +54,8 @@ the lecture on "practical methodology" into practice. You can use a dataset such
 as CIFAR as a testing ground for your models. Some possibilities:
 
 - Do a grid or random search for good hyperparameters of your model and/or
-training procedure (you could use keras-tuner for this).
+training procedure (you could use 
+  [keras-tuner](https://www.tensorflow.org/tutorials/keras/keras_tuner) for this).
 - Use data augmentation to improve generalization.
 - Conduct error analyses to guide the search for possible improvements of your
 models.
