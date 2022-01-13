@@ -196,11 +196,11 @@ lectures:
   - date: 2022-01-20
     type:
     content:
-    - title: TBD
+    - title: Introspection
       slides:
     reading:
-    - xtitle: "TBD"
-      xurl: TBD
+    - title: Reading Assignment
+      url: reading11.html
     assignment:
     - label: Practical Methodology
       link: ass11.html
