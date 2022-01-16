@@ -205,6 +205,18 @@ lectures:
     - label: Practical Methodology
       link: ass11.html
 
+  - date: 2022-01-27
+    type:
+    content:
+    - title: TBD
+      slides:
+    reading:
+    - title: TBD
+      url:
+    assignment:
+    - label: Introspection
+      link: ass12.html
+
 # General Hints
 # - https://blog.ml.cmu.edu/2020/08/31/4-overfitting/
 # - https://blog.ml.cmu.edu/category/educational/
